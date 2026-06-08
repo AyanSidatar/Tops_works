@@ -1,0 +1,5 @@
+ayan python 20000
+ayans java 23000
+prince java 23000
+jiyan python 32000
+mahiman laravel 34000
