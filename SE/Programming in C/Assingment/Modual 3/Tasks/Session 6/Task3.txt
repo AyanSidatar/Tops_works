@@ -1,0 +1,52 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+// Abstract Base Class
+class Product
+{
+public:
+    // Pure Virtual Function
+    virtual void upload() = 0;
+
+    // Virtual destructor for safe memory clean up
+    virtual ~Product() = default;
+};
+
+// Subclass 1
+class Electronics : public Product
+{
+public:
+    void upload() override
+    {
+        cout << "🔌 [Electronics Upload] Indexing technical serial numbers, updating warranty databases, and certifying safety labels...\n";
+    }
+};
+
+// Subclass 2
+class Clothing : public Product
+{
+public:
+    void upload() override
+    {
+        cout << "👕 [Clothing Upload] Storing fabric specifications, updating color/size matrix grids, and indexing model galleries...\n";
+    }
+};
+
+int main()
+{
+    // Create base class pointers pointing to child instances
+    Product *electroProduct = new Electronics();
+    Product *clothProduct = new Clothing();
+
+    // Triggering abstract actions
+    electroProduct->upload();
+    clothProduct->upload();
+
+    // Clean up heap space
+    delete electroProduct;
+    delete clothProduct;
+
+    return 0;
+}
