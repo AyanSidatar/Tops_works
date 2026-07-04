@@ -1,0 +1,33 @@
+1.--SELECT 
+    user_id, 
+    COUNT(order_id) AS order_count
+FROM 
+    orders
+GROUP BY 
+    user_id;
+	
+2.--SELECT 
+    restaurant_name
+FROM 
+    restaurants
+GROUP BY 
+    restaurant_name
+HAVING 
+    AVG(rating) > 4.0;
+	
+3.--SELECT DISTINCT 
+    user_id
+FROM 
+    payments
+WHERE 
+    user_id IN (
+        SELECT 
+            user_id 
+        FROM 
+            payments 
+        WHERE 
+            amount > 2000
+    );
+	
+4.--SELECT movie_name FROM movies GROUP BY movie_name HAVING AVG(rating) > (
+SELECT AVG(rating) FROM movies);

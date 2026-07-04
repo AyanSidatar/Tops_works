@@ -1,0 +1,24 @@
+1.--CREATE TABLE Restaurants (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(100),
+  cuisine VARCHAR(50),
+  rating DECIMAL(3,1),
+  city VARCHAR(100));
+  
+	INSERT INTO Restaurants (name, cuisine, rating, city)
+	VALUES
+	('Trattoria Roma',     'Italian',  4.5, 'New York'),
+	('Sakura Garden',      'Japanese', 4.8, 'Los Angeles'),
+	('Casa Fuego',         'Mexican',  4.2, 'Chicago'),
+	('Spice Route',        'Indian',   4.6, 'Houston'),
+	('Le Petit Bistro',    'French',   4.0, 'San Francisco');
+
+2.--UPDATE Restaurants SET rating =4.7 WHERE name ='Spice Villa';
+
+3.--DELETE FROM Restaurants WHERE  rating < 3.5;
+
+4.--SELECT * FROM Restaurants
+WHERE city ='Ahmedabad'
+AND rating > 4.0
+ORDER BY rating DESC
+LIMIT 2;

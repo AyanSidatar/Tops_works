@@ -1,0 +1,48 @@
+1.--CREATE TABLE Restaurants (
+    id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    location VARCHAR(150) NOT NULL,
+    cuisine VARCHAR(50)
+);
+
+2.--CREATE TABLE FoodOrder (
+    order_id INT PRIMARY KEY,
+    restaurant_id INT,
+    user_id INT,
+    order_total DECIMAL(10, 2),
+    FOREIGN KEY (restaurant_id) REFERENCES restaurants(id)
+);
+
+3.--CREATE TABLE SpotifyUser (
+    user_id INT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE,
+    email VARCHAR(100) NOT NULL,
+    subscription_type VARCHAR(20)
+);
+
+	INSERT INTO SpotifyUser (user_id, username, email, subscription_type) VALUES
+		(1, 'music_lover99', 'alex@email.com', 'Premium'),
+		(2, 'rock_star_sam', 'sam@email.com', 'Free'),
+		(3, 'lofi_chill', 'taylor@email.com', 'Premium'),
+		(4, 'techno_jordan', 'jordan@email.com', 'Free'),
+		(5, 'jazz_vibes', 'morgan@email.com', 'Premium'),
+		(6, 'pop_queen', 'casey@email.com', 'Free');
+
+4.--CREATE VIEW TopSpendersView AS
+SELECT 
+    user_id, -- Assuming 'usernames' in your prompt refers to identifying the user via user_id from FoodOrder
+    order_total
+FROM 
+    FoodOrder
+WHERE 
+    order_total > 1000;
+	
+5.--SELECT 
+    user_id, 
+    order_total
+FROM 
+    TopSpendersView
+WHERE 
+    order_total > 2000
+ORDER BY 
+    order_total DESC;

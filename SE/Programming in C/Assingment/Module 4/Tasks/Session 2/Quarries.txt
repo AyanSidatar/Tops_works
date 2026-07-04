@@ -1,0 +1,7 @@
+1.--CREATE TABLE restaurants (id INT PRIMARY KEY,name VARCHAR(20),location VARCHAR(20),rating DECIMAL(2,1));
+
+2.--ALTER TABLE restaurants ADD COLUMN average_cost INT;
+
+3.--DROP TABLE restaurants;
+
+4.--CREATE TABLE playlists (playlist_id INT PRIMARY KEY AUTO_INCREMENT,title VARCHAR(50),created_by VARCHAR(50),created_at DATE);

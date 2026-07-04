@@ -1,0 +1,11 @@
+1.--CREATE TABLE playlist(id int,song_name varchar(20),artist varchar(20),genre 		varchar(20),play_count int);
+
+	INSERT INTO playlist (id, song_name, artist, genre, play_count) VALUES(1, 'Blinding Lights', 'The Weeknd',  'Pop',980),(2,'Shape of You','Ed Sheeran','Pop',870),(3,'Apna Bana Le','Arijit Singh','Romantic',980),(4,'Jhoome Jo Pathaan','Arijit Singh','Dance',1100),(5,'Besharam Rang','Caralisa Monteiro','Pop',870);
+
+2.--SELECT song_name,artist AS Singer FROM playlist;
+
+3.--SELECT song_name, artist, genre, play_count FROM   playlist WHERE  genre = 'Pop' AND  play_count > 100 ORDER BY play_count DESC;
+
+4.--SELECT COUNT(*) AS hiphop_song_count FROM playlist WHERE  genre = 'Hip-Hop';
+
+5.--SELECT genre,SUM(play_count) AS total_plays FROM playlist GROUP BY genre ORDER BY total_plays DESC;

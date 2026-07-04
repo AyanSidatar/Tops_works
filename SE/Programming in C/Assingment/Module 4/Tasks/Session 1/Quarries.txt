@@ -1,0 +1,6 @@
+3.--CREATE TABLE Users (user_id INT PRIMARY KEY,username VARCHAR(50),email VARCHAR(100),followers_count INT,
+);
+
+4.--INSERT INTO users VALUES(1,'Ayan','ayan@gmail.com',300),(2,'prince','prince@gmail.com',300),(3,'Ajay','ajay@gmail.com',30000);
+
+5.--CREATE TABLE post(post_id INT primary key, user_id INT, caption VARCHAR(20),post_date DATE,FOREIGN key(user_id) REFERENCES users(user_id));
