@@ -1,0 +1,18 @@
+/* Style all playlist items using the class selector */
+
+.playlist-item {
+  background-color: #121212;
+  color: white;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+/* Highlight the currently playing song using the id selector */
+
+#now-playing {
+  background-color: #1db954;
+  color: black;
+  font-weight: bold;
+}

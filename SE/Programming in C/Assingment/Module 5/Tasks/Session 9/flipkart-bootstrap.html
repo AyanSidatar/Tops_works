@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart Product Cards</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #f1f3f6;
+      }
+
+      .card {
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .price {
+        color: green;
+        font-size: 22px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-center text-primary mb-4">🛒 Flipkart Product Page</h1>
+
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://www.boat-lifestyle.com/cdn/shop/files/Artboard2_52206726-98d5-45a4-b521-f034ec83e7b6.png?v=1752729573"
+              class="card-img-top"
+              alt="Headphones"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">Wireless Headphones</h5>
+
+              <p class="price">₹1,999</p>
+
+              <p class="card-text">
+                Premium sound quality with noise cancellation.
+              </p>
+
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://www.boat-lifestyle.com/cdn/shop/files/Artboard_10_3e8ce994-39ac-4443-b0df-d570bcdaf6b3_1800x.png?v=1734592384"
+              class="card-img-top"
+              alt="Smart Watch"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">Smart Watch</h5>
+
+              <p class="price">₹2,499</p>
+
+              <p class="card-text">
+                Fitness tracking and heart rate monitoring.
+              </p>
+
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://www.portronics.com/cdn/shop/files/portronics_sound_drum_p_mobile_speaker.jpg?v=1732797960"
+              class="card-img-top"
+              alt="Bluetooth Speaker"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">Bluetooth Speaker</h5>
+
+              <p class="price">₹1,499</p>
+
+              <p class="card-text">
+                Crystal-clear sound with long battery life.
+              </p>
+
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

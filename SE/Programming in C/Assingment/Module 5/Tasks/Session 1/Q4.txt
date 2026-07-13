@@ -1,0 +1,20 @@
+Que: Draw a diagram or write a list showing the DOM structure (parent-child relationships) of your myprofile.html page. Include at least 3 levels (html > body > your content).
+
+Ans:Here is the DOM (Document Object Model) structure of your myprofile.html page:
+
+html
+│
+├── head
+│   ├── meta (charset="UTF-8")
+│   ├── meta (viewport)
+│   └── title
+│
+└── body
+    ├── h1
+    │   └── "Name : Bhatt Mahiman."
+    │
+    ├── p
+    │   └── "Hello, My name is Mahiman. I am learning HTML and CSS."
+    │
+    └── img
+        └── src="images/Mahiman web solutions.png"

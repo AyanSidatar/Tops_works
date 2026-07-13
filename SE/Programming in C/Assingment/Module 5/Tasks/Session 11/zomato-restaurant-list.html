@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato Restaurant List</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: #f8f9fa;
+      }
+
+      .card {
+        transition: 0.3s;
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        height: 220px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h2 class="text-center text-danger mb-4">🍽️ Zomato Restaurant List</h2>
+
+      <div class="row g-4">
+        <!-- Restaurant 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600"
+              class="card-img-top"
+              alt="Pizza"
+            />
+
+            <div class="card-body">
+              <h4 class="card-title">The Pizza Company</h4>
+
+              <!-- Bootstrap Color Utilities -->
+              <span class="badge bg-success">⭐ 4.6</span>
+              <span class="badge bg-warning text-dark">20% OFF</span>
+              <span class="badge bg-primary">Open</span>
+
+              <p class="card-text mt-3">
+                Delicious Italian pizzas with fresh toppings and cheese.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Restaurant 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"
+              class="card-img-top"
+              alt="Restaurant"
+            />
+
+            <div class="card-body">
+              <h4 class="card-title">Barbeque Nation</h4>
+
+              <!-- Bootstrap Color Utilities -->
+              <span class="badge bg-success">⭐ 4.8</span>
+              <span class="badge bg-info">Buy 1 Get 1</span>
+              <span class="badge bg-danger">Closed</span>
+
+              <p class="card-text mt-3">
+                Famous for unlimited buffet, live grills, and desserts.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Restaurant 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600"
+              class="card-img-top"
+              alt="Gujarati Food"
+            />
+
+            <div class="card-body">
+              <h4 class="card-title">The Grand Thakar</h4>
+
+              <!-- Bootstrap Color Utilities -->
+              <span class="badge bg-success">⭐ 4.7</span>
+              <span class="badge bg-warning text-dark">Flat ₹150 OFF</span>
+              <span class="badge bg-primary">Open</span>
+
+              <p class="card-text mt-3">
+                Authentic Gujarati thali with unlimited traditional dishes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

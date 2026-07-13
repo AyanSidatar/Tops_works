@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Notification Badge</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        height: 2000px; /* To demonstrate scrolling */
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      /* Fixed WhatsApp Notification Badge */
+      .whatsapp-badge {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .whatsapp-badge:hover {
+        background-color: #1ebe5d;
+        transform: scale(1.05);
+      }
+
+      /* Notification Count */
+      .notification-count {
+        display: inline-block;
+        background-color: red;
+        color: white;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        border-radius: 50%;
+        margin-left: 10px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WhatsApp Chat Notification Demo</h1>
+
+    <p>
+      Scroll down the page. The WhatsApp notification badge will remain fixed at
+      the bottom-right corner.
+    </p>
+
+    <div class="whatsapp-badge">
+      💬 WhatsApp
+      <span class="notification-count">5</span>
+    </div>
+  </body>
+</html>

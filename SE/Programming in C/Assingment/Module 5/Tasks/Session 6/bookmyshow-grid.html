@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMyShow Movie Grid</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 30px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #d81b60;
+      }
+
+      /* Movie Grid */
+      .movie-grid {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      /* Each Movie Poster */
+      .movie-card {
+        position: relative; /* Parent for absolute badge */
+        width: 220px;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      .movie-card img {
+        width: 100%;
+        display: block;
+      }
+
+      .movie-card h3 {
+        margin: 10px 0;
+      }
+
+      /* New Badge */
+      .badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: red;
+        color: white;
+        padding: 5px 12px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎬 BookMyShow Movie Posters</h1>
+
+    <div class="movie-grid">
+      <!-- Movie 1 -->
+      <div class="movie-card">
+        <span class="badge">NEW</span>
+
+        <img
+          src="https://m.media-amazon.com/images/I/91EmWoPK3+L.jpg"
+          alt="Movie 1"
+        />
+
+        <h3>Avengers: Endgame</h3>
+      </div>
+
+      <!-- Movie 2 -->
+      <div class="movie-card">
+        <img
+          src="https://m.media-amazon.com/images/I/81T0GmGsrZL._AC_UF894,1000_QL80_.jpg"
+          alt="Movie 2"
+        />
+
+        <h3>Spider-Man: No Way Home</h3>
+      </div>
+
+      <!-- Movie 3 -->
+      <div class="movie-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStTuIy188hL9PFB6TKdtghr_zGVz-qmXX6NQpWJkN_5g&s=10"
+          alt="Movie 3"
+        />
+
+        <h3>Doctor Strange</h3>
+      </div>
+    </div>
+  </body>
+</html>

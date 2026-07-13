@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato Restaurant Card</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        padding: 30px;
+      }
+
+      .restaurant-card {
+        width: 320px;
+        margin: auto;
+        border: 2px solid #e23744;
+        border-radius: 10px;
+        background-color: white;
+      }
+
+      /* Reusable class for common margin and padding.
+           This improves maintainability because the spacing
+           can be changed in one place instead of updating
+           every individual section. */
+      .section-spacing {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .restaurant-name {
+        background-color: #fff3f4;
+      }
+
+      .cuisine {
+        background-color: #ffffff;
+      }
+
+      .rating {
+        background-color: #e8f5e9;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="restaurant-card">
+      <div class="restaurant-name section-spacing">
+        <h2>The Pizza Company</h2>
+      </div>
+
+      <div class="cuisine section-spacing">
+        <p><strong>Cuisine:</strong> Italian, Pizza</p>
+      </div>
+
+      <div class="rating section-spacing">
+        <p>⭐ Rating: 4.6 / 5</p>
+      </div>
+    </div>
+  </body>
+</html>

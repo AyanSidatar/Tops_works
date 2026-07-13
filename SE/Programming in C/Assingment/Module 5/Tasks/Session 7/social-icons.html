@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite Apps</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 40px;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 30px;
+      }
+
+      /* Flex Container */
+      .icon-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      /* App Icons */
+      .icon-container img {
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+        transition: transform 0.3s;
+        cursor: pointer;
+      }
+
+      .icon-container img:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Favorite Apps</h1>
+
+    <div class="icon-container">
+      <img
+        src="https://img.magnific.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg?semt=ais_hybrid&w=740&q=80"
+        alt="Instagram"
+      />
+
+      <img
+        src="https://img.magnific.com/premium-vector/vector-whatsapp-social-media-logo_1093524-447.jpg?semt=ais_hybrid&w=740&q=80"
+        alt="WhatsApp"
+      />
+
+      <img
+        src="https://i.pinimg.com/736x/f4/34/e3/f434e30f1c5a170fc4700661cc99c3ab.jpg"
+        alt="Zomato"
+      />
+
+      <img
+        src="https://media.designrush.com/inspiration_images/757502/conversions/BDA-desktop.jpg"
+        alt="Spotify"
+      />
+    </div>
+  </body>
+</html>

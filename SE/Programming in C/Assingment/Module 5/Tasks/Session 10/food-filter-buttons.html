@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery Filters</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: #f8f9fa;
+      }
+
+      .filter-section {
+        margin-top: 50px;
+      }
+
+      h2 {
+        color: #e23744;
+        margin-bottom: 25px;
+      }
+
+      .btn-filter {
+        border-radius: 25px;
+        padding: 10px 25px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container filter-section">
+      <h2 class="text-center">🍽️ Food Filters</h2>
+
+      <!-- Filter Buttons -->
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <button class="btn btn-danger btn-filter active">All</button>
+
+        <button class="btn btn-outline-success btn-filter">🥗 Veg</button>
+
+        <button class="btn btn-outline-danger btn-filter">🍗 Non-Veg</button>
+
+        <button class="btn btn-outline-warning btn-filter">🍰 Desserts</button>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

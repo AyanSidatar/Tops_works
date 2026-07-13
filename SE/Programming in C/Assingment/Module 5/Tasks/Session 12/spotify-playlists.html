@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Featured Playlists</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #121212;
+        color: white;
+      }
+
+      h1 {
+        color: #1db954;
+        font-weight: bold;
+      }
+
+      .card {
+        background: #181818;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .card img {
+        height: 220px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+      }
+
+      .btn-listen {
+        background: #1db954;
+        color: white;
+        font-weight: bold;
+      }
+
+      .btn-listen:hover {
+        background: #18a74a;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-center mb-5">🎵 Featured Playlists</h1>
+
+      <div class="row g-4">
+        <!-- Playlist 1 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600"
+              class="card-img-top"
+              alt="Chill Vibes"
+            />
+
+            <div class="card-body text-center">
+              <h4 class="card-title">Chill Vibes</h4>
+              <p class="card-text">Relax with soothing and peaceful music.</p>
+
+              <a href="#" class="btn btn-listen w-100"> ▶ Listen Now </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Playlist 2 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600"
+              class="card-img-top"
+              alt="Top Hits"
+            />
+
+            <div class="card-body text-center">
+              <h4 class="card-title">Top Hits 2026</h4>
+              <p class="card-text">Trending songs from around the world.</p>
+
+              <a href="#" class="btn btn-listen w-100"> ▶ Listen Now </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Playlist 3 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600"
+              class="card-img-top"
+              alt="Workout Beats"
+            />
+
+            <div class="card-body text-center">
+              <h4 class="card-title">Workout Beats</h4>
+              <p class="card-text">High-energy songs to boost your workout.</p>
+
+              <a href="#" class="btn btn-listen w-100"> ▶ Listen Now </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

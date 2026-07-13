@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart Product Tile</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f3f6;
+        padding: 30px;
+      }
+
+      .product-card {
+        width: 250px;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        margin: auto;
+        transition: 0.3s;
+      }
+
+      .product-card:hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+      }
+
+      .product-card img {
+        display: block;
+        width: 180px;
+        margin: 0 auto 15px;
+      }
+
+      .product-name {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .price {
+        display: inline-block;
+        background-color: #388e3c;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 5px;
+        font-size: 18px;
+
+        /* Hide initially */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      /* Show price on hover */
+      .product-card:hover .price {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product-card">
+      <img
+        src="https://www.boat-lifestyle.com/cdn/shop/files/Artboard2_52206726-98d5-45a4-b521-f034ec83e7b6.png?v=1752729573"
+        alt="Wireless Headphones"
+      />
+
+      <span class="product-name"> Wireless Bluetooth Headphones </span>
+
+      <!-- Remove 'hide-price' class to show the price -->
+      <span class="price hide-price"> ₹1,999 </span>
+    </div>
+  </body>
+</html>

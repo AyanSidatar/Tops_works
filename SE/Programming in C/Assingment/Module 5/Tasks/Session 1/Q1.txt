@@ -1,0 +1,5 @@
+Que:Open Instagram's home page in Chrome, right-click on a post image, and use Inspect Element to find the exact HTML tag and CSS class used for the image container. Write down the tag name and class.
+
+
+Ans: HTML Tag (Image Container): div
+CSS Class (Image Container): _aagu _aa20

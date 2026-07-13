@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Links Preview</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: #f4f4f4;
+        font-family: Arial, sans-serif;
+      }
+
+      .container-box {
+        max-width: 700px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .input-box {
+        position: relative;
+        margin-bottom: 20px;
+      }
+
+      .input-box i {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: #666;
+      }
+
+      .input-box input {
+        padding: 12px 15px 12px 45px;
+      }
+
+      .preview-card {
+        border-radius: 12px;
+        padding: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+      }
+
+      /* Different Colors for Each Platform */
+
+      .instagram {
+        background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcaf45);
+      }
+
+      .linkedin {
+        background: #0a66c2;
+      }
+
+      .github {
+        background: #24292e;
+      }
+
+      .youtube {
+        background: #ff0000;
+      }
+
+      .platform-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .platform-info i {
+        font-size: 35px;
+      }
+
+      .handle {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .visit-btn {
+        background: white;
+        color: black;
+        font-weight: bold;
+      }
+
+      .visit-btn:hover {
+        background: #f1f1f1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-box">
+        <h2 class="text-center mb-4">Social Links Form</h2>
+
+        <form id="socialForm">
+          <!-- Instagram -->
+          <div class="input-box">
+            <i class="bi bi-instagram"></i>
+            <input
+              type="url"
+              id="instagram"
+              class="form-control"
+              placeholder="Instagram URL"
+              required
+            />
+          </div>
+
+          <!-- LinkedIn -->
+          <div class="input-box">
+            <i class="bi bi-linkedin"></i>
+            <input
+              type="url"
+              id="linkedin"
+              class="form-control"
+              placeholder="LinkedIn URL"
+              required
+            />
+          </div>
+
+          <!-- GitHub -->
+          <div class="input-box">
+            <i class="bi bi-github"></i>
+            <input
+              type="url"
+              id="github"
+              class="form-control"
+              placeholder="GitHub URL"
+              required
+            />
+          </div>
+
+          <!-- YouTube -->
+          <div class="input-box">
+            <i class="bi bi-youtube"></i>
+            <input
+              type="url"
+              id="youtube"
+              class="form-control"
+              placeholder="YouTube URL"
+              required
+            />
+          </div>
+
+          <button class="btn btn-primary w-100">Submit</button>
+        </form>
+
+        <!-- Preview -->
+        <div id="preview"></div>
+      </div>
+    </div>
+
+    <script>
+      function getUsername(url) {
+        let parts = url.split("/").filter((part) => part !== "");
+
+        return parts[parts.length - 1];
+      }
+
+      document
+        .getElementById("socialForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const platforms = [
+            {
+              name: "Instagram",
+              url: instagram.value,
+              icon: "bi-instagram",
+              className: "instagram",
+            },
+            {
+              name: "LinkedIn",
+              url: linkedin.value,
+              icon: "bi-linkedin",
+              className: "linkedin",
+            },
+            {
+              name: "GitHub",
+              url: github.value,
+              icon: "bi-github",
+              className: "github",
+            },
+            {
+              name: "YouTube",
+              url: youtube.value,
+              icon: "bi-youtube",
+              className: "youtube",
+            },
+          ];
+
+          let output = "";
+
+          platforms.forEach((platform) => {
+            output += `
+
+<div class="preview-card ${platform.className}">
+
+<div class="platform-info">
+
+<i class="bi ${platform.icon}"></i>
+
+<div>
+
+<div><strong>${platform.name}</strong></div>
+
+<div class="handle">@${getUsername(platform.url)}</div>
+
+</div>
+
+</div>
+
+<a href="${platform.url}"
+target="_blank"
+class="btn visit-btn">
+
+Visit
+
+</a>
+
+</div>
+
+`;
+          });
+
+          document.getElementById("preview").innerHTML = output;
+        });
+    </script>
+  </body>
+</html>

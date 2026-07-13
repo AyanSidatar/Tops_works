@@ -1,0 +1,16 @@
+/* Zomato-inspired Button Style */
+
+button {
+  background-color: #e23744;
+  color: white;
+  font-size: 18px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #28c64a;
+}

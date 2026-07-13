@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Artist Landing Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: linear-gradient(to right, #1db954, #191414);
+        font-family: Arial, sans-serif;
+      }
+
+      .artist-card {
+        max-width: 500px;
+        margin: 60px auto;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        padding: 30px;
+      }
+
+      .artist-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #1db954;
+        margin-bottom: 20px;
+      }
+
+      .artist-name {
+        color: #1db954;
+        font-weight: bold;
+      }
+
+      .bio {
+        color: #555;
+        margin: 20px 0;
+        line-height: 1.6;
+      }
+
+      .social-btn {
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="artist-card">
+        <!-- Artist Image -->
+        <img
+          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500"
+          alt="Artist"
+          class="artist-img"
+        />
+
+        <!-- Artist Name -->
+        <h2 class="artist-name">Arijit Singh</h2>
+
+        <!-- Short Bio -->
+        <p class="bio">
+          Arijit Singh is one of India's most loved playback singers, known for
+          his soulful voice and chart-topping songs. His music has captured
+          millions of hearts across the world.
+        </p>
+
+        <!-- Social Media Buttons -->
+        <a href="#" class="btn btn-primary social-btn">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="#" class="btn btn-danger social-btn">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="#" class="btn btn-dark social-btn">
+          <i class="bi bi-spotify"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
